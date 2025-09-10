@@ -4,9 +4,9 @@ import java.util.List;
 public class MultiFolderImpl implements MultiFolder {
     private final String name;
     private final String size;
-    private final ArrayList<Folder> folders;
+    private final List<Folder> folders;
 
-    public MultiFolderImpl(String name, String size, ArrayList<Folder> folders) {
+    public MultiFolderImpl(String name, String size, List<Folder> folders) {
         this.name = name;
         this.size = size;
         this.folders = folders != null ? folders : new ArrayList<>();
@@ -25,5 +25,14 @@ public class MultiFolderImpl implements MultiFolder {
     @Override
     public String getSize() {
         return size;
+    }
+
+    @Override
+    public String toString() {
+        return "MultiFolderImpl{" +
+                "name='" + name + '\'' +
+                ", size='" + size + '\'' +
+                ", folders=" + folders +
+                '}';
     }
 }

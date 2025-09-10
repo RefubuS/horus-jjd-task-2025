@@ -1,4 +1,4 @@
-interface Folder {
+public interface Folder {
     String getName();
     String getSize();
 }

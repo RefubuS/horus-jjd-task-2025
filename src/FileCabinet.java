@@ -4,7 +4,7 @@ import java.util.Optional;
 import java.util.stream.Stream;
 
 public class FileCabinet implements Cabinet {
-    private List<Folder> folders;
+    private final List<Folder> folders;
 
     public FileCabinet(List<Folder> folders) {
         this.folders = folders != null ? folders : new ArrayList<>();
